@@ -226,10 +226,10 @@ CREATE TABLE gold.dim_dish
   FACT TABLE : SWIGGY ORDERS
 =============================================================*/
 
-IF OBJECT_ID('gold.fact_swiggy_orders', 'U') IS NOT NULL 
-    DROP TABLE gold.fact_swiggy_orders;
+IF OBJECT_ID('gold.fact_swiggy_data', 'U') IS NOT NULL 
+    DROP TABLE gold.fact_swiggy_data;
 
-CREATE TABLE gold.fact_swiggy_orders
+CREATE TABLE gold.fact_swiggy_data
 (
     order_id INT IDENTITY(1,1) PRIMARY KEY,
 
